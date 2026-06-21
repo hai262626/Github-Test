@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Doe - Creative Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb bg-orb-a"></div>
+  <div class="bg-orb bg-orb-b"></div>
+  <div class="grid-overlay"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <span class="brand-mark">JD</span>
+      <span class="brand-text">John Doe</span>
+    </a>
+    <nav class="nav">
+      <a href="#about">Giới thiệu</a>
+      <a href="#skills">Kỹ năng</a>
+      <a href="#timeline">Hành trình</a>
+      <a href="#contact">Liên hệ</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Đổi chế độ giao diện">Bật nhịp</button>
+  </header>
+
+  <main id="home">
+    <section class="hero reveal">
+      <div class="hero-copy">
+        <p class="eyebrow">Template nhân vật / portfolio</p>
+        <h1>John Doe là kiểu người luôn biến ý tưởng mơ hồ thành sản phẩm có cá tính.</h1>
+        <p class="lead">Một hồ sơ giới thiệu mang hơi hướng hiện đại, có animation nhẹ, các khối nội dung tương tác và một chút chiều sâu thị giác, nhưng vẫn chỉ nằm trong 3 file HTML, CSS, JS.</p>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Kết nối ngay</a>
+          <button class="btn btn-secondary" id="shuffleFact">Đổi fact ngẫu nhiên</button>
+        </div>
+
+        <div class="hero-stats">
+          <article>
+            <strong id="yearsExp">8+</strong>
+            <span>Năm kinh nghiệm</span>
+          </article>
+          <article>
+            <strong>24</strong>
+            <span>Dự án hoàn thành</span>
+          </article>
+          <article>
+            <strong>3</strong>
+            <span>Lĩnh vực trọng tâm</span>
+          </article>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <div class="portrait-frame">
+          <div class="portrait-glow"></div>
+          <div class="portrait">
+            <div class="portrait-silhouette"></div>
+            <div class="portrait-badge">JD</div>
+          </div>
+        </div>
+        <div class="now-playing">
+          <span class="label">Hiện tại</span>
+          <p id="factText">John thích xây thứ gì đó “đẹp trước, thông minh sau”, rồi tối ưu dần bằng dữ liệu.</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="panel reveal">
+      <div class="section-heading">
+        <p>Về John</p>
+        <h2>Rõ ràng, thực tế và thích những hệ thống có thể mở rộng.</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Phong cách làm việc</h3>
+          <p>John thích làm việc theo chu trình ngắn, kiểm tra nhanh, sửa sớm và giữ cho sản phẩm không bị “nặng mùi demo”.</p>
+        </div>
+        <div class="about-card accent">
+          <h3>Điểm mạnh</h3>
+          <p>Thiết kế giao diện, tư duy sản phẩm, triển khai front-end và tinh chỉnh trải nghiệm người dùng cho các trang giới thiệu, landing page, dashboard nhỏ.</p>
+        </div>
+        <div class="about-card">
+          <h3>Điều quan trọng</h3>
+          <p>Không chỉ đẹp mắt, trang web còn cần có cấu trúc tốt, tương tác vừa đủ và đủ linh hoạt để mở rộng nội dung về sau.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="panel reveal">
+      <div class="section-heading">
+        <p>Kỹ năng nổi bật</p>
+        <h2>Có chút “đa năng” nhưng vẫn ưu tiên thứ gì làm ra được kết quả rõ ràng.</h2>
+      </div>
+      <div class="skills-layout">
+        <div class="skill-list">
+          <button class="skill-item active" data-skill="UI">UI Design</button>
+          <button class="skill-item" data-skill="FE">Front-end</button>
+          <button class="skill-item" data-skill="PM">Product Thinking</button>
+          <button class="skill-item" data-skill="DATA">Data Review</button>
+        </div>
+        <div class="skill-detail" id="skillDetail">
+          <h3>UI Design</h3>
+          <p>John biết cách dùng màu, khoảng trống, nhịp chữ và bố cục để tạo cảm giác có chủ đích thay vì chỉ “đặt cho đủ”.</p>
+          <div class="meter"><span style="width: 92%"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="timeline" class="panel reveal">
+      <div class="section-heading">
+        <p>Hành trình</p>
+        <h2>Ba mốc chính tạo nên một profile có câu chuyện.</h2>
+      </div>
+      <div class="timeline">
+        <article>
+          <span>2018</span>
+          <h3>Bắt đầu từ thiết kế và HTML</h3>
+          <p>John học cách biến wireframe thành trang thật, rồi dần hiểu rằng sự rõ ràng quan trọng hơn hiệu ứng.</p>
+        </article>
+        <article>
+          <span>2021</span>
+          <h3>Chuyển sang front-end có hệ thống</h3>
+          <p>Thêm logic, trạng thái, tương tác và tối ưu trải nghiệm để trang không chỉ “đứng đó cho đẹp”.</p>
+        </article>
+        <article>
+          <span>2026</span>
+          <h3>Ưu tiên sản phẩm gọn nhưng tinh</h3>
+          <p>Giữ mọi thứ trong phạm vi nhỏ, nhưng cho người xem cảm giác có chiều sâu và tính cá nhân rõ rệt.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="panel contact-panel reveal">
+      <div>
+        <p class="section-tag">Liên hệ</p>
+        <h2>Cần một profile template kiểu này? Có thể dùng lại cho portfolio, about me hoặc landing page cá nhân.</h2>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <input type="text" name="name" placeholder="Tên của bạn" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="4" placeholder="Bạn muốn chỉnh gì cho template này?" required></textarea>
+        <button class="btn btn-primary" type="submit">Gửi tin nhắn</button>
+        <p class="form-note" id="formNote">Form này chỉ demo, nhưng có phản hồi thật từ JS.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>John Doe Profile Template</p>
+    <span>Built with HTML, CSS and JS</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
