@@ -1,0 +1,14 @@
+name: Welcome Message
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show welcome message
+        run: echo "Welcome to the website!"
