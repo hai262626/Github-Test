@@ -2,6 +2,6 @@
 const urlParams = new URLSearchParams(window.location.search);
 const username = urlParams.get('username');
 
-// LỖI CHÍ MẠNG: Nhét thẳng cái biến đó vào innerHTML mà không kiểm duyệt
-// Hacker có thể nhập username là một đoạn mã độc <script> để hack trang web
-document.getElementById('welcome-message').innerHTML = "Hello " + username;
+// Hiển thị dữ liệu người dùng dưới dạng text để tránh DOM XSS
+const welcomeMessageEl = document.getElementById('welcome-message');
+welcomeMessageEl.textContent = "Hello " + (username ?? "");
