@@ -2,6 +2,8 @@
 
 **Description:** This repository contains a simple personal profile website and supporting GitHub workflow files.
 
+**Note:** This README is intentionally minimal — feel free to expand.
+
 ## Mục tiêu
 
 Đây là một README mẫu để ghi chú cho dự án và chuẩn bị cho việc làm việc với GitHub trong tương lai.
