@@ -33,3 +33,5 @@
 - Tạo thêm trang giới thiệu cá nhân.
 - Thêm portfolio dự án.
 - Viết hướng dẫn commit, branch, và pull request.
+
+1
