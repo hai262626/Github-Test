@@ -59,11 +59,20 @@ skillButtons.forEach((button) => {
     skillButtons.forEach((item) => item.classList.remove('active'));
     button.classList.add('active');
 
-    skillDetail.innerHTML = `
-      <h3>${detail.title}</h3>
-      <p>${detail.description}</p>
-      <div class="meter"><span style="width: ${detail.meter}"></span></div>
-    `;
+    const titleEl = document.createElement('h3');
+    titleEl.textContent = detail.title;
+
+    const descriptionEl = document.createElement('p');
+    descriptionEl.textContent = detail.description;
+
+    const meterEl = document.createElement('div');
+    meterEl.className = 'meter';
+
+    const meterBarEl = document.createElement('span');
+    meterBarEl.style.width = detail.meter;
+    meterEl.appendChild(meterBarEl);
+
+    skillDetail.replaceChildren(titleEl, descriptionEl, meterEl);
   });
 });
 
